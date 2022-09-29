@@ -6,6 +6,14 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+img {
+    @apply object-cover object-center;
+  }
+
+header {
+    @apply bg-transparent absolute top-0 left-0 w-full flex items-center z-10;
+}
+
 .navbar-fixed {
     @apply fixed z-[9999] bg-white bg-opacity-70;
     backdrop-filter: blur(5px);
@@ -26,4 +34,35 @@ body {
 
 .hamburger-active > span:nth-child(3) {
     @apply transform -rotate-45;
+}
+
+#about h4 {
+    @apply font-bold text-primary mb-3;
+}
+
+#portfolio h4,
+#clients h4,
+#blog h4,
+#contact h4 {
+    @apply font-semibold text-lg text-primary;
+}
+
+.title {
+    @apply tracking-wider font-bold text-lg mb-2 md:text-xl;
+}
+
+.input-contact {
+    @apply w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary;
+}
+
+.btn-contact {
+    @apply text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:opacity-80 hover:shadow-lg transition duration-500;
+}
+
+.btn-project {
+    @apply w-1/2 text-center hover:bg-teal-700 rounded-full rounded-bl-lg text-white font-semibold px-8 py-3 bg-blue-500 transition duration-500;
+}
+
+.btn-sosmed {
+    @apply py-2 px-4 mr-3 rounded-lg text-white text-base hover:outline hover:outline-2 hover:outline-secondary hover:opacity-80 transition duration-500;    
 }
