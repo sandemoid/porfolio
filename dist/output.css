@@ -857,10 +857,6 @@ video {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
-.fill-current {
-  fill: currentColor;
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -868,6 +864,11 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .py-5 {
@@ -919,6 +920,11 @@ video {
   text-align: center;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -927,11 +933,6 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-3xl {
@@ -1228,6 +1229,25 @@ header {
   background-color: rgb(15 118 110 / var(--tw-bg-opacity));
 }
 
+.card {
+  margin-bottom: 2.5rem;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .card {
+    width: 33.333333%;
+  }
+}
+
 .btn-sosmed {
   margin-right: 0.75rem;
   border-radius: 0.5rem;
@@ -1251,10 +1271,6 @@ header {
   outline-style: solid;
   outline-width: 2px;
   outline-color: #64748B;
-}
-
-.hover\:scroll-auto:hover {
-  scroll-behavior: auto;
 }
 
 .hover\:border-primary:hover {
