@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Inter', sans-serif;
 }
@@ -73,3 +77,8 @@ header {
 .btn-sosmed {
     @apply py-2 px-4 mr-3 rounded-lg text-white text-base hover:outline hover:outline-2 hover:outline-secondary hover:opacity-80 transition duration-500;    
 }
+
+.btn-blog {
+    @apply font-medium text-sm bg-primary text-white py-2 px-4 rounded-lg hover:opacity-80;
+}
+
